@@ -1,0 +1,408 @@
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* header */
+
+header {
+  text-align: center;
+  height: 350px;
+}
+
+.header-section {
+  height: 50px;
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.toyota-logo {
+  color: white;
+  cursor: pointer;
+}
+
+.toyota-logo:hover {
+  color: rgb(207, 207, 207);
+  transition: 0.3s;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.header-details {
+  color: white;
+  cursor: pointer;
+}
+
+.header-details:hover {
+  color: rgb(207, 207, 207);
+  transition: 0.3s;
+}
+
+.header-wrapper {
+  padding-top: 45px;
+  font-size: 16px;
+}
+
+/*      */
+
+/* main */
+
+main {
+  display: flex;
+  height: 1400px;
+}
+
+.toyota {
+  padding: 30px;
+  height: 110px;
+  weight: 110px;
+}
+
+.left-side {
+  width: 20%;
+  background-image: url("https://cdn.car-moby.jp/article/wp-content/uploads/2020/09/25090147/new_alloy_wheels-1568x1045.jpeg");
+  background-position: right 10%;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.center {
+  width: 60%;
+  /* overflow: auto;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: start;
+  max-height: 1200px; */
+}
+
+table {
+  border-top: 1px solid #5d717e;
+  border-left: 1px solid #5d717e;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+table th {
+  border-right: 1px solid #5d717e;
+  border-bottom: 1px solid #5d717e;
+  background: whitesmoke;
+  width: 40%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+table td {
+  border-right: 1px solid #5d717e;
+  border-bottom: 1px solid #5d717e;
+  padding: 8px 10px;
+  line-height: 1.8em;
+}
+
+.zip-section {
+  width: 100px !important;
+}
+
+.address-auto {
+  font-size: 12px;
+  display: inline;
+  padding: 3px;
+}
+
+.required {
+  color: red;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+input[type="text"] {
+  width: 70%;
+  height: 25px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 40px;
+}
+
+.agree {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.submit-btn {
+  display: flex;
+  padding-top: 25px;
+  justify-content: center;
+}
+
+textarea {
+  width: 95%;
+  height: 120px;
+}
+
+.right-side {
+  width: 20%;
+  background-image: url("https://cdn.car-moby.jp/article/wp-content/uploads/2020/09/25090147/new_alloy_wheels-1568x1045.jpeg");
+  background-size: cover;
+  margin-left: 20px;
+}
+
+/*        */
+
+/* footer */
+
+footer {
+  height: 200px;
+  background-color: rgb(240, 240, 240);
+  position: relative;
+  margin-top: 18px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 50%;
+  width: 50%;
+  margin-left: 27%;
+}
+
+footer ul li {
+  color: rgba(49, 49, 49, 0.842);
+}
+
+.footer-wrapper {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+address {
+  font-style: normal;
+  text-align: center;
+  background-color: rgb(44, 44, 44);
+  height: 30px;
+  padding-top: 5px;
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  color: white;
+  font-size: 10px;
+}
+
+/*              */
+
+/* 入力確認色枠 */
+
+.success {
+  border: 2px solid limegreen;
+}
+
+.zip-success {
+  border: 2px solid limegreen;
+  width: 100px !important;
+}
+
+.error {
+  border: 2px solid crimson;
+}
+
+.zip-error {
+  border: 2px solid crimson;
+  width: 100px !important;
+}
+
+/* エラー表示 */
+
+.contents_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.company_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.zip_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.tellphone_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.url_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.firstName_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.lastName_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.department_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.userphone_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+.mail_feedback {
+  font-size: 12px;
+  color: crimson;
+}
+
+/*            */
+
+/* ↓以下モバイル対応↓ */
+
+@media (max-width: 800px) {
+  /* headerモバイル対応 */
+
+  .header-right {
+    width: 160px;
+  }
+
+  .header-wrapper {
+    font-size: 12px;
+  }
+
+  /*                  */
+
+  /* mainモバイル対応 */
+
+  .required {
+    font-size: 10px;
+  }
+
+  .section {
+    font-size: 11px;
+    padding-right: 3px;
+    padding-left: 0;
+  }
+
+  input[type="text"] {
+    width: 95%;
+  }
+
+  .center {
+    width: 90%;
+    margin-left: 5%;
+    height: 1000px;
+    max-height: 1500px;
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    display: none;
+  }
+
+  /*                    */
+
+  /* footerモバイル対応 */
+
+  .footer-wrapper {
+    text-align: center;
+    font-size: 23px;
+    padding-top: 8px;
+    font-weight: bold;
+  }
+
+  footer ul {
+    text-align: center;
+    display: block;
+    margin-left: 25%;
+  }
+
+  footer ul li {
+    border-bottom: 1px dotted gray;
+    padding: 5px;
+  }
+
+  /*                        */
+
+  /* エラー表示モバイル対応 */
+
+  .contents_feedback {
+    font-size: 10px;
+  }
+
+  .company_feedback {
+    font-size: 10px;
+  }
+
+  .zip_feedback {
+    font-size: 10px;
+  }
+
+  .tellphone_feedback {
+    font-size: 10px;
+  }
+
+  .url_feedback {
+    font-size: 10px;
+  }
+
+  .firstName_feedback {
+    font-size: 10px;
+  }
+
+  .lastName_feedback {
+    font-size: 10px;
+  }
+
+  .department_feedback {
+    font-size: 10px;
+  }
+
+  .userphone_feedback {
+    font-size: 10px;
+  }
+
+  .mail_feedback {
+    font-size: 10px;
+  }
+
+  /*                         */
+}
