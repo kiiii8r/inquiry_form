@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <script
+      src="https://ajaxzip3.github.io/ajaxzip3.js"
+      charset="UTF-8"
+    ></script>
+    <title>TOYOTAお問い合わせフォーム</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-section">
+        <div class="toyota-logo">TOYOTA</div>
+        <div class="header-right">
+          <div class="header-details">HOME</div>
+          <div class="header-details">INQUIRY</div>
+        </div>
+      </div>
+      <div class="header-wrapper">
+        <h1>TOYOTAお問い合わせフォーム</h1>
+      </div>
+      <img
+        class="toyota"
+        src="images/toyota.png"
+        alt="トヨタロゴ"
+        title="トヨタロゴ"
+      />
+    </header>
+
+    <main>
+      <div class="left-side"></div>
+      <div class="center">
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  次の <META> 要素を、HTML の <HEAD>タグ間に追加してください。必要に応じて、charset                  -->
+        <!--  パラメータを変更して、HTML ページの文字コードを指定してください。                                     -->
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  次の <FORM> 要素をページに追加してください。                                              -->
+        <!--  ----------------------------------------------------------------------  -->
+        <form
+          action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+          class="signup-form"
+          method="POST"
+          name="inquiry_form"
+        >
+          <input type="hidden" name="oid" value="00D5h00000135Ii" />
+          <input
+            type="hidden"
+            name="retURL"
+            value="https://toyota.jp/index.html"
+          />
+          <!--  ----------------------------------------------------------------------  -->
+          <!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+          <!--  <input type="hidden" name="debug" value=1>                              -->
+          <!--  <input type="hidden" name="debugEmail" value="acial.ateam@gmail.com">   -->
+          <!--  ----------------------------------------------------------------------  -->
+          <table>
+            <tr>
+              <th>
+                <div class="section">お問い合わせ内容</div>
+                <span class="required">※必須</span>
+              </th>
+              <td>
+                <textarea
+                  id="contents"
+                  maxlength="1000"
+                  name="00N5h000000L1uz"
+                  placeholder="お問い合わせ内容記入欄"
+                  size="20"
+                ></textarea>
+                <div class="contents_feedback"></div>
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <th>
+                <div class="section">貴社名</div>
+                <span class="required">※必須</span>
+              </th>
+              <td>
+                <input
+                  id="company"
+                  maxlength="20"
+                  name="company"
+                  placeholder="株式会社〇〇"
+                  size="20"
+                  type="text"
+                />
+                <div class="company_feedback"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="section">住所</div>
+              </th>
+              <td>
+                <input
+                  class="zip-section"
+                  id="zip"
+                  maxlength="20"
+                  name="zip"
+                  placeholder="郵便番号"
+                  size="20"
+                  type="text"
+                  onKeyUp="AjaxZip3.zip2addr(this,'','state','city','street');"
+                />
+                <div class="address-auto">※下記住所自動入力</div>
+                <div class="zip_feedback"></div>
+
+                <input
+                  id="state"
+                  maxlength="100"
+                  name="state"
+                  placeholder="都道府県"
+                  size="20"
+                  type="text"
+                />
+
+                <input
+                  id="city"
+                  maxlength="100"
+                  name="city"
+                  placeholder="市区郡"
+                  size="20"
+                  type="text"
+                />
+
+                <input
+                  id="street"
+                  maxlength="100"
+                  name="street"
+                  placeholder="町名・番地"
+                  size="20"
+                  type="text"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="section">貴社　お電話番号</div>
+                <span class="required">※必須</span>
+              </th>
+              <td>
+                <input
+                  id="tellphone"
+                  maxlength="13"
+                  name="phone"
+                  placeholder="000-0000-0000(ハイフン込み)"
+                  size="20"
+                  type="text"
+                />
+                <div class="tellphone_feedback"></div>
+              </td>
+            </tr>
+
+            <tr class="space">
+              <th><div class="section">貴社　サイトURL</div></th>
+              <td>
+                <input
+                  id="url"
+                  maxlength="100"
+                  name="00N5h000000L3KX"
+                  placeholder="https://もしくはhttp://から入力"
+                  size="20"
+                  type="text"
+                />
+                <div class="url_feedback" require></div>
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="section">担当者様（姓）</div>
+                <span class="required">※必須</span>
+              </th>
+              <td>
+                <input
+                  id="firstName"
+                  maxlength="10"
+                  name="first_name"
+                  placeholder="苗字 (数字、記号は入力不可)"
+                  size="20"
+                  type="text"
+                />
+                <div class="firstName_feedback"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="section">担当者様（名）</div>
+                <span class="required">※必須</span>
+              </th>
+              <td>
+                <input
+                  id="lastName"
+                  maxlength="10"
+                  name="last_name"
+                  placeholder="お名前 (数字、記号は入力不可)"
+                  size="20"
+                  type="text"
+                />
+                <div class="lastName_feedback"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <th><div class="section">担当者様　部署名</div></th>
+              <td>
+                <input
+                  id="department"
+                  maxlength="20"
+                  name="00N5h000000L3Km"
+                  placeholder="〇〇支部"
+                  size="20"
+                  type="text"
+                />
+                <div class="department_feedback"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <th><div class="section">担当者様　お電話番号</div></th>
+              <td>
+                <input
+                  id="userphone"
+                  maxlength="13"
+                  name="mobile"
+                  placeholder="000-0000-0000 (ハイフン込み)"
+                  size="20"
+                  type="text"
+                />
+                <div class="userphone_feedback"></div>
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="section">担当者様　メールアドレス</div>
+                <span class="required">※必須</span>
+              </th>
+              <td>
+                <input
+                  id="mail"
+                  maxlength="30"
+                  name="email"
+                  placeholder="oo-x.△x@gmail.com"
+                  size="20"
+                  type="text"
+                />
+                <div class="mail_feedback"></div>
+              </td>
+            </tr>
+          </table>
+          <div class="agree">
+            <p>当社のメールマガジンを受け取りますか？</p>
+            <input type="radio" name="q1" value="yes" checked /> はい
+            <input type="radio" name="q1" value="no" /> いいえ
+          </div>
+          <div class="submit-btn">
+            <input type="submit" name="submit" onClick="return check();" />
+          </div>
+        </form>
+      </div>
+      <div class="right-side"></div>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">TOYOTA</div>
+      <ul>
+        <li>お問い合わせ</li>
+        <li>運営企業</li>
+        <li>利用規約</li>
+        <li>プライバシーポリシー</li>
+        <li>サイトマップ</li>
+      </ul>
+      <address>copyright &copy; toyota-ace.com All Rights Reserved.</address>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
